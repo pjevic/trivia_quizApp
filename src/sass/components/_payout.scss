@@ -1,0 +1,38 @@
+.payout {
+  font-size: 1.4rem;
+  transition: all 0.4s;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__heading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+  }
+
+  &__amount {
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding-left: 3rem;
+
+    border-right: 5px solid $color-5;
+  }
+}
+
+.fill {
+  background-image: linear-gradient($color-4, $color-3);
+  font-weight: 600;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.safe {
+  border: 1px solid $color-5;
+  border-right: 5px solid $color-5;
+}

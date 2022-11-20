@@ -1,0 +1,23 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    width: 10rem;
+    height: 9rem;
+    border-radius: 50%;
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient($color-1, $color-2);
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 1rem 2rem rgba($color-black-1, 0.1);
+  }
+
+  &__off {
+    cursor: none;
+    background-color: transparent;
+    border-radius: 1.5rem;
+  }
+}

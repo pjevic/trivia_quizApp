@@ -1,0 +1,92 @@
+.playground {
+  padding: 3rem;
+  width: 66rem;
+
+  transition: all 0.4s;
+}
+
+.answer,
+.category {
+  background-color: $color-backround;
+  display: block;
+
+  border: 2px solid transparent;
+
+  &__radio-input {
+    display: none;
+
+    &:link,
+    &:visited {
+      background-image: linear-gradient($color-4, $color-5);
+    }
+
+    &:active,
+    &:focus {
+      background-image: linear-gradient($color-4, $color-5);
+    }
+
+    &:hover {
+      background-image: linear-gradient($color-3, $color-4);
+      border: 2px solid $color-backround;
+    }
+  }
+
+  &__radio-label {
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba($color-black-1, 0.1);
+
+    &:link,
+    &:visited {
+      background-image: linear-gradient($color-4, $color-5);
+    }
+
+    &:active,
+    &:focus {
+      background-image: linear-gradient($color-4, $color-5);
+    }
+
+    &:hover {
+      background-image: linear-gradient($color-3, $color-4);
+      border: 2px solid $color-backround;
+    }
+
+    &--off {
+      cursor: none;
+      background-color: rgba($color-black-1, 0.15);
+      border: 2px solid transparent;
+      border-radius: 1.5rem;
+    }
+  }
+}
+
+.answer__radio-input:checked + .answer__radio-label {
+  background-image: linear-gradient($color-4, $color-5);
+  color: $color-backround;
+  transform: scale(1.01);
+  padding-left: 3.5rem;
+}
+
+.category {
+  margin-top: 2rem;
+
+  transition: all 0.3s;
+  &__radio-label {
+    min-width: 25rem;
+
+    &--4 {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}

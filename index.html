@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts : Popoins: 100, 300, 400, 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- scss and JS src -->
+    <link rel="stylesheet" href="./src/sass/main.scss" />
+    <script defer type="module" src="./src/js/controller.js"></script>
+
+    <title>quizApp</title>
+  </head>
+  <body>
+    <div class="container__main">
+      <aside class="container container__payout">
+        <div class="payout"></div>
+      </aside>
+
+      <main class="container playground container__playground"></main>
+
+      <aside class="container__call-out">
+        <div class="container container__call-out--box container__call-out--timer"></div>
+        <div class="container container__call-out--box container__call-out--half"><button class="btn"></button></div>
+        <div class="container container__call-out--box container__call-out--next"></div>
+        <div class="container container__call-out--box container__call-out--take"><button class="btn">take money</button></div>
+      </aside>
+    </div>
+  </body>
+</html>

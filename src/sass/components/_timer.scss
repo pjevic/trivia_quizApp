@@ -1,0 +1,79 @@
+.timer {
+  width: 15rem;
+  height: 15rem;
+  background-image: linear-gradient(to right bottom, $color-3, $color-4);
+  border-radius: 1.5rem;
+  margin-left: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  &__circle {
+    width: 16rem;
+    height: 16rem;
+    // background: cornflowerblue;
+
+    position: relative;
+
+    &--outer {
+      height: 16rem;
+      width: 16rem;
+      border-radius: 50%;
+
+      // box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+      padding: 2rem;
+    }
+
+    &--inner {
+      height: 12rem;
+      width: 12rem;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      // box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      //   -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    }
+
+    &--number {
+      font-weight: 400;
+      color: #555;
+    }
+  }
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 2rem;
+  stroke-dasharray: 435;
+  stroke-dashoffset: 435;
+  animation: anim 21s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: -60;
+  left: -60;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.container__call-out--timer__circle--number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "Quiz based on Trivia API questions.",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Milan Pjevic",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0"
+  }
+}
