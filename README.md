@@ -20,4 +20,4 @@ I'm ready for feedback.
 The quiz is actually fun! 😁 For 10 minutes! 😁😁
 
 
-🗝️ elosnoc.reverse 🗝️
+🗝️ elosnoc.reverse 
